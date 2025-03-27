@@ -111,6 +111,7 @@ public class Number_Guesser {
             } else {
                 System.out.println("Hooray! You got it!!!!");
                 guessed = true;
+                System.out.println("You guessed with " + guess + " tries left.");
             }
         }
 
