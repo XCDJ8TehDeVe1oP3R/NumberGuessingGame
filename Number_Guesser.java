@@ -60,7 +60,7 @@ public class Number_Guesser {
             default -> {
                 System.out.println("Invalid choice. Exiting game.");
                 playAgain = false;
-                continue;
+                return;
                 }
             }
 
