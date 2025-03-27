@@ -13,7 +13,7 @@ public class Number_Guesser {
         System.out.println("You have " + guess + " number of tries.");
 
 
-        while (guess > 0 || guessed == false) { 
+        while (guess > 0 && guessed == false) { 
             System.out.println("Make a guess!");
             myInputNum = s.nextInt();
 
