@@ -59,7 +59,6 @@ public class Number_Guesser {
             case 5 -> playGame(3, 1000);
             default -> {
                 System.out.println("Invalid choice. Exiting game.");
-                playAgain = false;
                 return;
                 }
             }
