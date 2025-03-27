@@ -1,11 +1,35 @@
 /*
+ * 27th March 2025
+ * 
+ * Number Guesser Game
+ * 
+ * 9:39 AM:
  * This is the first version
  * Future version features could have:
  * (1) Difficulties (easy, hard and god-mode)
  * Easy - 10 tries, 0-100
  * Hard - 5 tries, 0-200
  * GodMode - 3 tries, 0-1000
+ * 
+ * 
+ * 9:56 AM:
+ * I've added the difficulty levels
+ * have a choice to play again
+ * I've added a play again feature
+ * I've added a switch case for the difficulty levels
+ * Added more levels of difficulty (5 levels):
+ * Easy (10 tries, range 0-100)
+ * Normal (10 tries, range 0-200)
+ * Mid (5 tries, range 0-200)
+ * Hard (5 tries, range 0-500)
+ * God-Mode (3 tries, range 0-1000)
+ * Added a playGame method to handle the game logic
+ * Added a playAgain boolean to handle the play again feature
+ * Added a while loop to handle the play again feature
+ * Added a switch case to handle the difficulty levels
+ * Added a default case for invalid choice
  */
+
 import java.util.*;
 
 public class Number_Guesser {
