@@ -36,6 +36,7 @@ public class Number_Guesser {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
+        // Welcome message and level menu
         System.out.println("Welcome to Random Guessing game!");
         System.out.println("Choose a difficulty level: ");
         System.out.println("0. Mini (3 try, range 0-20)");
@@ -45,11 +46,13 @@ public class Number_Guesser {
         System.out.println("4. Hard (5 tries, range 0-500)");
         System.out.println("5. God-Mode (3 tries, range 0-1000)");
 
-        int choice = s.nextInt();
+        int choice = s.nextInt(); // User input for difficulty level
 
-        boolean playAgain = true;
+        boolean playAgain = true; // Play again boolean
 
+        // While loop to handle play again feature
         while (playAgain) {
+            // Switch case for difficulty levels
             switch (choice) {
             case 0 -> playGame(3, 20);
             case 1 -> playGame(10, 100);
@@ -57,15 +60,17 @@ public class Number_Guesser {
             case 3 -> playGame(5, 200);
             case 4 -> playGame(5, 500);
             case 5 -> playGame(3, 1000);
-            default -> {
+            default -> {// Default case for invalid choice
                 System.out.println("Invalid choice. Exiting game.");
                 return;
                 }
             }
 
+            // Play again feature
             System.out.println("Do you want to play again? (yes/no)");
             String response = s.next().toLowerCase();
             if (response.equals("yes")) {
+                //Level menu
                 System.out.println("Choose a difficulty level: ");
                 System.out.println("0. Mini (3 try, range 0-20)");
                 System.out.println("1. Easy (10 tries, range 0-100)");
@@ -81,6 +86,7 @@ public class Number_Guesser {
         }
     }
 
+    // Method to handle the game logic
     public static void playGame(int tries, int range) {
         int secretNum, guess, myInputNum;
         boolean guessed = false;
