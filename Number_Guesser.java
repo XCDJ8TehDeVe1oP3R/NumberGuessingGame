@@ -1,3 +1,11 @@
+/*
+ * This is the first version
+ * Future version features could have:
+ * (1) Difficulties (easy, hard and god-mode)
+ * Easy - 10 tries, 0-100
+ * Hard - 5 tries, 0-200
+ * GodMode - 3 tries, 0-1000
+ */
 import java.util.*;
 
 public class Number_Guesser {
