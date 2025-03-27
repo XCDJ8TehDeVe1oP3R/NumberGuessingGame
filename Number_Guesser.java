@@ -74,7 +74,7 @@ public class Number_Guesser {
                 System.out.println("Choose a difficulty level: ");
                 System.out.println("0. Mini (3 try, range 0-20)");
                 System.out.println("1. Easy (10 tries, range 0-100)");
-                System.out.println("2. Normal (10 tries, range 0-200)");
+                System.out.println("2. Normal (7 tries, range 0-200)");
                 System.out.println("3. Mid (5 tries, range 0-200)");
                 System.out.println("4. Hard (5 tries, range 0-500)");
                 System.out.println("5. God-Mode (3 tries, range 0-1000)");
