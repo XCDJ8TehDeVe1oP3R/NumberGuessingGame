@@ -20,9 +20,10 @@ public class Number_Guesser {
         System.out.println("Welcome to Random Guessing game!");
         System.out.println("You have " + guess + " number of tries.");
 
-
+        System.out.println("Make a guess!");
+        
         while (guess > 0 && guessed == false) { 
-            System.out.println("Make a guess!");
+            
             myInputNum = s.nextInt();
 
             if(myInputNum > secretNum) {
